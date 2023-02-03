@@ -2,7 +2,7 @@ package com.wojteknowak.rickandmorty
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.wojteknowak.rickandmorty.ui.main.MainFragment
+import com.wojteknowak.presentation.episodes.MainFragment
 
 class MainActivity : AppCompatActivity() {
 

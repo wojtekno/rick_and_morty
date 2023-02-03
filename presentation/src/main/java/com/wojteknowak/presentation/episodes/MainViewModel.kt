@@ -1,4 +1,4 @@
-package com.wojteknowak.rickandmorty.ui.main
+package com.wojteknowak.presentation.episodes
 
 import androidx.lifecycle.ViewModel
 

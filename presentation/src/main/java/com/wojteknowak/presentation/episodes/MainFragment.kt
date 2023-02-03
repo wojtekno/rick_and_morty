@@ -1,4 +1,4 @@
-package com.wojteknowak.rickandmorty.ui.main
+package com.wojteknowak.presentation.episodes
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.wojteknowak.rickandmorty.R
+import com.wojteknowak.presentation.R
 
 class MainFragment : Fragment() {
 
