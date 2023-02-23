@@ -1,4 +1,4 @@
-package com.wojteknowak.presentation.episodes
+package com.wojteknowak.presentation.episodelist
 
 import android.os.Bundle
 import android.view.LayoutInflater

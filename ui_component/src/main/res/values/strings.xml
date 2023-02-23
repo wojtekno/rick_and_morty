@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="episodes_title">Episodes</string>
+    <string name="episode_details_title">Episode Details</string>
+    <string name="character_details_title">Character Details</string>
+    <string name="location_details_title">Location Details</string>
 </resources>

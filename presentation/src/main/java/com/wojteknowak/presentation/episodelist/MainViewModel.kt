@@ -1,4 +1,4 @@
-package com.wojteknowak.presentation.episodes
+package com.wojteknowak.presentation.episodelist
 
 import androidx.lifecycle.ViewModel
 
