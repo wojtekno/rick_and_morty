@@ -7,6 +7,7 @@ import androidx.navigation.compose.composable
 import com.wojteknowak.presentation.characterdetails.CharacterDetailsScreen
 import com.wojteknowak.presentation.episodedetails.EpisodeDetailsScreen
 import com.wojteknowak.presentation.episodelist.EpisodeListScreen
+import com.wojteknowak.presentation.locationdetails.LocationDetailsScreen
 import com.wojteknowak.presentation.navigation.Screen
 
 @Composable
@@ -22,7 +23,10 @@ fun NavGraph(navHostController: NavHostController) {
             EpisodeDetailsScreen(navHostController)
         }
         composable(route = Screen.CharacterDetails.route) {
-            CharacterDetailsScreen()
+            CharacterDetailsScreen(navHostController)
+        }
+        composable(route = Screen.LocationDetails.route) {
+            LocationDetailsScreen(navHostController)
         }
     }
 }
