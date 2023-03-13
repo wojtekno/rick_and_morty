@@ -13,8 +13,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "RickAndMorty"
-include ':app'
-include ':presentation'
-include ':domain'
-include ':data'
-include ':ui_component'
+include(":app")
+include(":presentation")
+include(":domain")
+include(":data")
+include(":ui_component")
