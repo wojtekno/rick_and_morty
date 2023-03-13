@@ -1,0 +1,40 @@
+[versions]
+androidAppV = "7.3.1"
+kotilnAndroidV = "1.8.0"
+androidAppcompatV = "1.6.1"
+androidCoreV = "1.9.0"
+androidMaterialV = "1.8.0"
+junitV = "4.13.2"
+androidJunitV = "1.1.5"
+lifecycleV = "2.6.0"
+navigationV = "2.5.3"
+espressoV = "3.5.1"
+composeActivityV = "1.7.0-beta01"
+composeBomV = "2023.01.00"
+
+[libraries]
+android-core = { module = "androidx.core:core-ktx", version.ref = "androidCoreV" }
+android-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "androidAppcompatV" }
+android-material = { module = "com.google.android.material:material", version.ref = "androidMaterialV" }
+livedata = { module = "androidx.lifecycle:lifecycle-livedata-ktx", version.ref = "lifecycleV" }
+viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref = "lifecycleV" }
+
+#compose
+navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationV" }
+activity-compose = { module = "androidx.activity:activity-compose", version.ref = "composeActivityV" }
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBomV"}
+compose-material3 = {module = "androidx.compose.material3:material3"}
+compose-uipreview = {module = "androidx.compose.ui:ui-tooling-preview"}
+compose-uitooling = {module = "androidx.compose.ui:ui-tooling"}
+
+#testing
+junit = { module = "junit:junit", version.ref = "junitV" }
+android-junit = { module = "androidx.test.ext:junit", version.ref = "androidJunitV" }
+espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoV" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "androidAppV" }
+android-library = { id = "com.android.library", version.ref = "androidAppV" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotilnAndroidV" }
+
+[bundles]

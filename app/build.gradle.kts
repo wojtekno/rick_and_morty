@@ -1,6 +1,7 @@
+@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
-    id("com.android.application")
-    id("org.jetbrains.kotlin.android")
+    alias(libs.plugins.android.application)
+    alias(libs.plugins.kotlin.android)
 }
 
 android {
@@ -47,18 +48,15 @@ dependencies {
 
     implementation(project(":presentation"))
 
-    implementation("androidx.core:core-ktx:1.7.0")
-    implementation("androidx.appcompat:appcompat:1.6.0")
-    implementation("com.google.android.material:material:1.8.0")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
-    implementation("androidx.navigation:navigation-runtime-ktx:2.4.1")
-    testImplementation("junit:junit:4.13.2")
-    androidTestImplementation("androidx.test.ext:junit:1.1.3")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+    implementation(libs.android.core)
+    implementation(libs.android.appcompat)
+    implementation(libs.android.material)
+    implementation(libs.livedata)
+    implementation(libs.viewmodel)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.android.junit)
+    androidTestImplementation(libs.espresso)
 
-    implementation("androidx.activity:activity-compose:1.7.0-beta01")
-    val nav_version = "2.5.3"
-    implementation("androidx.navigation:navigation-compose:$nav_version")
+    implementation(libs.activity.compose)
+    implementation(libs.navigation.compose)
 }
