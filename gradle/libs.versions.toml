@@ -12,6 +12,7 @@ espressoV = "3.5.1"
 composeActivityV = "1.7.0-beta01"
 composeBomV = "2023.01.00"
 hiltV = "2.44"
+hiltNavigationComposeV = "1.0.0"
 
 
 [libraries]
@@ -29,8 +30,10 @@ compose-material3 = { module = "androidx.compose.material3:material3" }
 compose-uipreview = { module = "androidx.compose.ui:ui-tooling-preview" }
 compose-uitooling = { module = "androidx.compose.ui:ui-tooling" }
 
+#hilt
 android-hilt = { module = "com.google.dagger:hilt-android", version.ref = "hiltV" }
 android-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltV" }
+android-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigationComposeV" }
 
 #testing
 junit = { module = "junit:junit", version.ref = "junitV" }

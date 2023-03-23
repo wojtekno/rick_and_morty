@@ -4,8 +4,11 @@ import android.util.Log
 import androidx.lifecycle.ViewModel
 import com.wojteknowak.domain.model.Episode
 import com.wojteknowak.uicomponent.episodelist.EpisodeItemUiModel
+import dagger.hilt.android.lifecycle.HiltViewModel
+import javax.inject.Inject
 
-class EpisodeListViewModel : ViewModel() {
+@HiltViewModel
+class EpisodeListViewModel @Inject constructor() : ViewModel() {
 
     init {
         Log.d(TAG, "init()")
@@ -15,6 +18,7 @@ class EpisodeListViewModel : ViewModel() {
     val episodes: List<EpisodeItemUiModel> = getDummyEpisodes().map { mapper.from(it) }
 
     private fun getDummyEpisodes(): List<Episode> = buildList {
+        Log.d(TAG, "getDummyEpisodes")
         (1..25).toList().forEach {
             val season = when {
                 it <= 10 -> "S01"
@@ -34,6 +38,11 @@ class EpisodeListViewModel : ViewModel() {
                 )
             )
         }
+    }
+
+    override fun onCleared() {
+        super.onCleared()
+        Log.d(TAG, "onCleared")
     }
 
     private companion object {
