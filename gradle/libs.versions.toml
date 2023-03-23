@@ -1,6 +1,6 @@
 [versions]
 androidAppV = "7.3.1"
-kotilnAndroidV = "1.8.0"
+kotlinAndroidV = "1.8.0"
 androidAppcompatV = "1.6.1"
 androidCoreV = "1.9.0"
 androidMaterialV = "1.8.0"
@@ -11,6 +11,8 @@ navigationV = "2.5.3"
 espressoV = "3.5.1"
 composeActivityV = "1.7.0-beta01"
 composeBomV = "2023.01.00"
+hiltV = "2.44"
+
 
 [libraries]
 android-core = { module = "androidx.core:core-ktx", version.ref = "androidCoreV" }
@@ -22,10 +24,13 @@ viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel-ktx", version.ref
 #compose
 navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigationV" }
 activity-compose = { module = "androidx.activity:activity-compose", version.ref = "composeActivityV" }
-compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBomV"}
-compose-material3 = {module = "androidx.compose.material3:material3"}
-compose-uipreview = {module = "androidx.compose.ui:ui-tooling-preview"}
-compose-uitooling = {module = "androidx.compose.ui:ui-tooling"}
+compose-bom = { module = "androidx.compose:compose-bom", version.ref = "composeBomV" }
+compose-material3 = { module = "androidx.compose.material3:material3" }
+compose-uipreview = { module = "androidx.compose.ui:ui-tooling-preview" }
+compose-uitooling = { module = "androidx.compose.ui:ui-tooling" }
+
+android-hilt = { module = "com.google.dagger:hilt-android", version.ref = "hiltV" }
+android-hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltV" }
 
 #testing
 junit = { module = "junit:junit", version.ref = "junitV" }
@@ -35,6 +40,8 @@ espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "esp
 [plugins]
 android-application = { id = "com.android.application", version.ref = "androidAppV" }
 android-library = { id = "com.android.library", version.ref = "androidAppV" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotilnAndroidV" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinAndroidV" }
+android-hilt-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hiltV" }
+kotlin-kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlinAndroidV" }
 
 [bundles]
